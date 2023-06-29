@@ -1,13 +1,13 @@
 /* eslint-disable prettier/prettier */
 import {NativeBaseProvider, Text, Input, Button, Box} from 'native-base';
 import React, {useEffect, useState} from 'react';
-import {Alert, StyleSheet} from 'react-native';
+import {Alert, StyleSheet, Image} from 'react-native';
 import {firebase} from '../../firebase/config';
+import Logo from '../../assets/rain.png';
 
 export default function Signup({navigation}) {
   const [username, setuserName] = useState('');
   const [email, setemail] = useState('');
-  // eslint-disable-next-line prettier/prettier
   const [password, setpassword] = useState('');
   const [confirmpassword, setconfirmpassword] = useState('');
 
@@ -15,6 +15,7 @@ export default function Signup({navigation}) {
     try {
       await firebase.auth().createUserWithEmailAndPassword(email, password);
       Alert.alert('Successfully.');
+      navigation.navigate('login');
       setemail('');
       setpassword('');
     } catch (error) {
@@ -27,9 +28,7 @@ export default function Signup({navigation}) {
   return (
     <NativeBaseProvider>
       <Box flex={1} bg="#2d3436" alignItems="center" justifyContent="center">
-        <Text fontSize="3xl" bold style={styles.innerText}>
-          Sign Up
-        </Text>
+        <Image source={Logo} style={styles.image} />
         <Box alignItems={'center'} padding={15}>
           <Input
             bgColor="#636e72"
@@ -93,7 +92,6 @@ export default function Signup({navigation}) {
               createUser(email, password);
             }}>
             <Text style={styles.ttn} bold>
-              {' '}
               sign up
             </Text>
           </Button>
@@ -110,7 +108,6 @@ export default function Signup({navigation}) {
           <Text style={styles.innerText}>
             Have an account?
             <Text style={styles.txt} underline>
-              {' '}
               sign in
             </Text>
           </Text>
@@ -120,6 +117,11 @@ export default function Signup({navigation}) {
   );
 }
 var styles = StyleSheet.create({
+  image: {
+    top: 20,
+    width: 100,
+    height: 100,
+  },
   innerText: {
     color: 'white',
   },

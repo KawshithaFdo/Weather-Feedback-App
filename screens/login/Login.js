@@ -12,9 +12,9 @@ import {
   Box,
   AlertDialog,
 } from 'native-base';
-import {Alert, ImageBackground, StyleSheet, View} from 'react-native';
-import {getAuth, signInWithEmailAndPassword} from 'firebase/auth';
+import {Alert, Image, StyleSheet, View} from 'react-native';
 import {firebase} from '../../firebase/config';
+import Logo from '../../assets/rain.png';
 
 export default function Login({navigation}) {
   const [email, setEmail] = useState('');
@@ -35,9 +35,7 @@ export default function Login({navigation}) {
   return (
     <NativeBaseProvider>
       <Box flex={1} bg="#2d3436" alignItems="center" justifyContent="center">
-        <Text fontSize="4xl" bold mt="20%" color="white" alignItems={'center'}>
-          Login
-        </Text>
+        <Image source={Logo}  style={styles.image}/>
         <Box alignItems={'center'} padding={15}>
           <Input
             mx="4"
@@ -96,7 +94,6 @@ export default function Login({navigation}) {
           <Text style={styles.innerText}>
             Don't have an account ?
             <Text style={styles.txt} underline>
-              {' '}
               sign up
             </Text>
           </Text>
@@ -106,9 +103,9 @@ export default function Login({navigation}) {
   );
 }
 var styles = StyleSheet.create({
-  backgroundImage: {
-    flex: 1,
-    resizeMode: 'stretch',
+  image: {
+    width: 100,
+    height: 100,
   },
   innerText: {
     color: 'white',
@@ -119,5 +116,6 @@ var styles = StyleSheet.create({
   ttn: {
     color: 'black',
     fontSize: 20,
+    fontWeight:'bold',
   },
 });

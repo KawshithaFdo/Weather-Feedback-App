@@ -4,15 +4,13 @@ import { NativeBaseProvider,Text,Button,Box,Image } from 'native-base'
 
 
 export default function Welcome({navigation}) {
-
   const[data,setdata]=useState([]);
 
 
   useEffect(() => {
-
-    fetch('https://thronesapi.com/api/v2/characters')
-    .then((response) => response.json())
-    .then((json) => setdata(json));
+    // fetch('https://thronesapi.com/api/v2/characters')
+    // .then((response) => response.json())
+    // .then((json) => setdata(json));
 })
 
   return (
