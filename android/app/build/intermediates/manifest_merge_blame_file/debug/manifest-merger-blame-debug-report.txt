@@ -9,61 +9,61 @@
 9        android:targetSdkVersion="33" />
 10
 11    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
-11-->D:\myApp\MyApp\android\app\src\debug\AndroidManifest.xml:5:5-77
-11-->D:\myApp\MyApp\android\app\src\debug\AndroidManifest.xml:5:22-75
+11-->D:\GDSE57\SEM_04\Final\Front-End\Weather-Feedback-App\android\app\src\debug\AndroidManifest.xml:5:5-77
+11-->D:\GDSE57\SEM_04\Final\Front-End\Weather-Feedback-App\android\app\src\debug\AndroidManifest.xml:5:22-75
 12    <uses-permission android:name="android.permission.INTERNET" />
-12-->D:\myApp\MyApp\android\app\src\main\AndroidManifest.xml:3:5-67
-12-->D:\myApp\MyApp\android\app\src\main\AndroidManifest.xml:3:22-64
+12-->D:\GDSE57\SEM_04\Final\Front-End\Weather-Feedback-App\android\app\src\main\AndroidManifest.xml:3:5-67
+12-->D:\GDSE57\SEM_04\Final\Front-End\Weather-Feedback-App\android\app\src\main\AndroidManifest.xml:3:22-64
 13    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
 13-->[com.facebook.flipper:flipper:0.125.0] C:\Users\kawshikafdo\.gradle\caches\transforms-3\9112988e20ad25c32468b7d009f10311\transformed\jetified-flipper-0.125.0\AndroidManifest.xml:16:5-76
 13-->[com.facebook.flipper:flipper:0.125.0] C:\Users\kawshikafdo\.gradle\caches\transforms-3\9112988e20ad25c32468b7d009f10311\transformed\jetified-flipper-0.125.0\AndroidManifest.xml:16:22-73
 14
 15    <application
-15-->D:\myApp\MyApp\android\app\src\main\AndroidManifest.xml:5:5-23:19
+15-->D:\GDSE57\SEM_04\Final\Front-End\Weather-Feedback-App\android\app\src\main\AndroidManifest.xml:5:5-23:19
 16        android:name="com.myapp.MainApplication"
-16-->D:\myApp\MyApp\android\app\src\main\AndroidManifest.xml:6:7-38
+16-->D:\GDSE57\SEM_04\Final\Front-End\Weather-Feedback-App\android\app\src\main\AndroidManifest.xml:6:7-38
 17        android:allowBackup="false"
-17-->D:\myApp\MyApp\android\app\src\main\AndroidManifest.xml:9:7-34
+17-->D:\GDSE57\SEM_04\Final\Front-End\Weather-Feedback-App\android\app\src\main\AndroidManifest.xml:9:7-34
 18        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
 18-->[androidx.core:core:1.7.0] C:\Users\kawshikafdo\.gradle\caches\transforms-3\a74319f16e76beadbf53eb2669b709f5\transformed\core-1.7.0\AndroidManifest.xml:24:18-86
 19        android:debuggable="true"
 20        android:icon="@mipmap/rain"
-20-->D:\myApp\MyApp\android\app\src\main\AndroidManifest.xml:8:7-34
+20-->D:\GDSE57\SEM_04\Final\Front-End\Weather-Feedback-App\android\app\src\main\AndroidManifest.xml:8:7-34
 21        android:label="@string/app_name"
-21-->D:\myApp\MyApp\android\app\src\main\AndroidManifest.xml:7:7-39
+21-->D:\GDSE57\SEM_04\Final\Front-End\Weather-Feedback-App\android\app\src\main\AndroidManifest.xml:7:7-39
 22        android:theme="@style/AppTheme"
-22-->D:\myApp\MyApp\android\app\src\main\AndroidManifest.xml:10:7-38
+22-->D:\GDSE57\SEM_04\Final\Front-End\Weather-Feedback-App\android\app\src\main\AndroidManifest.xml:10:7-38
 23        android:usesCleartextTraffic="true" >
-23-->D:\myApp\MyApp\android\app\src\debug\AndroidManifest.xml:8:9-44
+23-->D:\GDSE57\SEM_04\Final\Front-End\Weather-Feedback-App\android\app\src\debug\AndroidManifest.xml:8:9-44
 24        <activity
-24-->D:\myApp\MyApp\android\app\src\debug\AndroidManifest.xml:11:9-111
+24-->D:\GDSE57\SEM_04\Final\Front-End\Weather-Feedback-App\android\app\src\debug\AndroidManifest.xml:11:9-111
 25            android:name="com.facebook.react.devsupport.DevSettingsActivity"
-25-->D:\myApp\MyApp\android\app\src\debug\AndroidManifest.xml:11:19-83
+25-->D:\GDSE57\SEM_04\Final\Front-End\Weather-Feedback-App\android\app\src\debug\AndroidManifest.xml:11:19-83
 26            android:exported="false" />
-26-->D:\myApp\MyApp\android\app\src\debug\AndroidManifest.xml:11:84-108
+26-->D:\GDSE57\SEM_04\Final\Front-End\Weather-Feedback-App\android\app\src\debug\AndroidManifest.xml:11:84-108
 27        <activity
-27-->D:\myApp\MyApp\android\app\src\main\AndroidManifest.xml:11:7-22:18
+27-->D:\GDSE57\SEM_04\Final\Front-End\Weather-Feedback-App\android\app\src\main\AndroidManifest.xml:11:7-22:18
 28            android:name="com.myapp.MainActivity"
-28-->D:\myApp\MyApp\android\app\src\main\AndroidManifest.xml:12:9-37
+28-->D:\GDSE57\SEM_04\Final\Front-End\Weather-Feedback-App\android\app\src\main\AndroidManifest.xml:12:9-37
 29            android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|screenSize|smallestScreenSize|uiMode"
-29-->D:\myApp\MyApp\android\app\src\main\AndroidManifest.xml:14:9-118
+29-->D:\GDSE57\SEM_04\Final\Front-End\Weather-Feedback-App\android\app\src\main\AndroidManifest.xml:14:9-118
 30            android:exported="true"
-30-->D:\myApp\MyApp\android\app\src\main\AndroidManifest.xml:17:9-32
+30-->D:\GDSE57\SEM_04\Final\Front-End\Weather-Feedback-App\android\app\src\main\AndroidManifest.xml:17:9-32
 31            android:label="@string/app_name"
-31-->D:\myApp\MyApp\android\app\src\main\AndroidManifest.xml:13:9-41
+31-->D:\GDSE57\SEM_04\Final\Front-End\Weather-Feedback-App\android\app\src\main\AndroidManifest.xml:13:9-41
 32            android:launchMode="singleTask"
-32-->D:\myApp\MyApp\android\app\src\main\AndroidManifest.xml:15:9-40
+32-->D:\GDSE57\SEM_04\Final\Front-End\Weather-Feedback-App\android\app\src\main\AndroidManifest.xml:15:9-40
 33            android:windowSoftInputMode="adjustResize" >
-33-->D:\myApp\MyApp\android\app\src\main\AndroidManifest.xml:16:9-51
+33-->D:\GDSE57\SEM_04\Final\Front-End\Weather-Feedback-App\android\app\src\main\AndroidManifest.xml:16:9-51
 34            <intent-filter>
-34-->D:\myApp\MyApp\android\app\src\main\AndroidManifest.xml:18:9-21:25
+34-->D:\GDSE57\SEM_04\Final\Front-End\Weather-Feedback-App\android\app\src\main\AndroidManifest.xml:18:9-21:25
 35                <action android:name="android.intent.action.MAIN" />
-35-->D:\myApp\MyApp\android\app\src\main\AndroidManifest.xml:19:13-65
-35-->D:\myApp\MyApp\android\app\src\main\AndroidManifest.xml:19:21-62
+35-->D:\GDSE57\SEM_04\Final\Front-End\Weather-Feedback-App\android\app\src\main\AndroidManifest.xml:19:13-65
+35-->D:\GDSE57\SEM_04\Final\Front-End\Weather-Feedback-App\android\app\src\main\AndroidManifest.xml:19:21-62
 36
 37                <category android:name="android.intent.category.LAUNCHER" />
-37-->D:\myApp\MyApp\android\app\src\main\AndroidManifest.xml:20:13-73
-37-->D:\myApp\MyApp\android\app\src\main\AndroidManifest.xml:20:23-70
+37-->D:\GDSE57\SEM_04\Final\Front-End\Weather-Feedback-App\android\app\src\main\AndroidManifest.xml:20:13-73
+37-->D:\GDSE57\SEM_04\Final\Front-End\Weather-Feedback-App\android\app\src\main\AndroidManifest.xml:20:23-70
 38            </intent-filter>
 39        </activity>
 40
