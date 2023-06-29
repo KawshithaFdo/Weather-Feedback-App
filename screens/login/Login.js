@@ -15,19 +15,24 @@ import {
 import {Alert, Image, StyleSheet, View} from 'react-native';
 import {firebase} from '../../firebase/config';
 import Logo from '../../assets/rain.png';
+import Spinner from '../../components/spinner';
 
 export default function Login({navigation}) {
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
+  const [loading, setLoading] = useState(false);
 
   const loginUser = async (email, password) => {
     try {
+      setLoading(true);
       await firebase.auth().signInWithEmailAndPassword(email, password);
       navigation.navigate('welcome');
       setEmail('');
       setPassword('');
+      setLoading(false);
     } catch (error) {
       var errorMessage = error.message;
+      setLoading(false);
       Alert.alert('Wrong Email or Password.');
     }
   };
@@ -35,7 +40,8 @@ export default function Login({navigation}) {
   return (
     <NativeBaseProvider>
       <Box flex={1} bg="#2d3436" alignItems="center" justifyContent="center">
-        <Image source={Logo}  style={styles.image}/>
+        <Image source={Logo} style={styles.image} />
+        {loading && <Spinner />}
         <Box alignItems={'center'} padding={15}>
           <Input
             mx="4"
@@ -116,6 +122,6 @@ var styles = StyleSheet.create({
   ttn: {
     color: 'black',
     fontSize: 20,
-    fontWeight:'bold',
+    fontWeight: 'bold',
   },
 });

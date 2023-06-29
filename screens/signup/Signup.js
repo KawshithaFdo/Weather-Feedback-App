@@ -4,23 +4,26 @@ import React, {useEffect, useState} from 'react';
 import {Alert, StyleSheet, Image} from 'react-native';
 import {firebase} from '../../firebase/config';
 import Logo from '../../assets/rain.png';
+import Spinner from '../../components/spinner';
 
 export default function Signup({navigation}) {
   const [username, setuserName] = useState('');
   const [email, setemail] = useState('');
   const [password, setpassword] = useState('');
   const [confirmpassword, setconfirmpassword] = useState('');
+  const [loading, setLoading] = useState(false);
 
   const createUser = async (email, password) => {
     try {
+      setLoading(true);
       await firebase.auth().createUserWithEmailAndPassword(email, password);
-      Alert.alert('Successfully.');
+      setLoading(false);
       navigation.navigate('login');
       setemail('');
       setpassword('');
     } catch (error) {
+      setLoading(false);
       var errorMessage = error.message;
-      console.log(errorMessage);
       Alert.alert('Try Again.');
     }
   };
@@ -29,6 +32,8 @@ export default function Signup({navigation}) {
     <NativeBaseProvider>
       <Box flex={1} bg="#2d3436" alignItems="center" justifyContent="center">
         <Image source={Logo} style={styles.image} />
+        {loading && <Spinner />}
+
         <Box alignItems={'center'} padding={15}>
           <Input
             bgColor="#636e72"

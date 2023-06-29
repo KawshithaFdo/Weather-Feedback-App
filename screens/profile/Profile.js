@@ -18,6 +18,7 @@ export default function Profile({navigation}) {
     console.log('Feedback submitted:', feedback);
     // Reset the feedback input
     setFeedback('');
+    navigation.goBack();
   };
 
   logoutUser = async () => {
@@ -33,7 +34,20 @@ export default function Profile({navigation}) {
   };
 
   const renderOldFeedbacks = () => {
-    return <Text style={styles.oldFeedback}>Hello</Text>;
+    return (
+      <View>
+        <Text style={styles.oldFeedback}>Hello</Text>
+        <Text style={styles.oldFeedback}>Hello</Text>
+        <Text style={styles.oldFeedback}>Hello</Text>
+        <Text style={styles.oldFeedback}>Hello</Text>
+        <Text style={styles.oldFeedback}>Hello</Text>
+        <Text style={styles.oldFeedback}>Hello</Text>
+        <Text style={styles.oldFeedback}>Hello</Text>
+        <Text style={styles.oldFeedback}>Hello</Text>
+        <Text style={styles.oldFeedback}>Hello</Text>
+        <Text style={styles.oldFeedback}>Hello</Text>
+      </View>
+    );
   };
 
   return (
@@ -107,16 +121,18 @@ var styles = StyleSheet.create({
   oldFeedbacksContainer: {
     flex: 1,
     width: '100%',
-    borderTopWidth: 1,
-    borderTopColor: '#fff',
+    borderWidth: 1,
+    borderColor: '#fff',
     bottom: 70,
+    padding: 10,
+    borderRadius: 12,
   },
   oldFeedback: {
     paddingVertical: 10,
     paddingHorizontal: 20,
-    color: '#fff',
+    color: 'gray',
     fontSize: 16,
     borderBottomWidth: 1,
-    borderBottomColor: '#fff',
+    borderBottomColor: 'gray',
   },
 });
